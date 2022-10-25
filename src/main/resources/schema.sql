@@ -1,0 +1,21 @@
+
+# Database 1
+CREATE DATABASE IF NOT EXISTS users_db1 IF;
+USE DATABASE users_db1;
+CREATE TABLE IF NOT EXISTS users_db1.users (
+    userId   INTEGER      NOT NULL AUTO_INCREMENT,
+    userName VARCHAR(128) NOT NULL,
+    address VARCHAR(128) NOT NULL,
+    PRIMARY KEY (userId)
+);
+
+
+# Database 2
+CREATE DATABASE users_db2 IF NOT EXISTS;
+USE DATABASE users_db2;
+CREATE TABLE IF NOT EXISTS users_db2.users (
+    userId   INTEGER      NOT NULL AUTO_INCREMENT,
+    userName VARCHAR(128) NOT NULL,
+    address VARCHAR(128) NOT NULL,
+    PRIMARY KEY (id)
+);
